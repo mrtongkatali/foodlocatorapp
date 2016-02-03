@@ -1,0 +1,15 @@
+<input type="text" value="test" ng-model="maps.zip_query" ng-blur="searchAllRotiRestaurant()">
+<div id="map_canvas">
+  <ui-gmap-google-map center="maps.center"
+                      control="maps.control"
+                      zoom="maps.zoom"
+                      dragging="maps.dragging"
+                      refresh="maps.refresh"
+                      options="maps.options"
+                      events="maps.events"
+                      bounds="maps.bounds"
+                      pan="maps.pan"
+          >
+    <ui-gmap-marker ng-repeat="m in deviceMarkers" idKey="m.id" coords="m.coords"></ui-gmap-marker>
+  </ui-gmap-google-map>
+</div>
