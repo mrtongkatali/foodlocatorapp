@@ -6,20 +6,31 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<title>Food Locator</title>
 </head>
+
+<link href="public/css/style.css" rel="stylesheet">
+
 <body>
     <div ng-view class="view-frame" id="main"></div>
 </body>
-
-<script src="node_modules/angular/angular.min.js"></script>
+<script src="node_modules/lodash/lodash.js"></script>
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/angular/angular.min.js"></script>
 <script src="node_modules/angular-route/angular-route.min.js"></script>
 <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
-<script src="node_modules/lodash/lodash.core.min.js"></script>
+<script src="node_modules/angular-resource/angular-resource.min.js"></script>
 <script type="text/javascript" src="app.js"></script>
-
 
 <!-- Controllers -->
 <script type="text/javascript" src="controllers/demo.js"></script>
+<script type="text/javascript" src="controllers/home.js"></script>
+
+<!-- Services -->
+<script type="text/javascript" src="services/maps.js"></script>
+
+<!-- google maps dependencies -->
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3.17&libraries=drawing,visualization,weather,places,geometry&sensor=false"></script>
+<script type="text/javascript" src="node_modules/angular-simple-logger/dist/angular-simple-logger.light.min.js"></script>
+<script type="text/javascript" src="node_modules/angular-google-maps/dist/angular-google-maps.min.js"></script>
 
 
 </html>
